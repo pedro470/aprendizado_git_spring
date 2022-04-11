@@ -17,4 +17,9 @@ public class UserService {
         List<User> lista = userRepository.findAll();
         return lista;
     }
+
+    public List<User> findByName(String name){
+        List<User> lista = userRepository.findByNome(name);
+        return lista;
+    }
 }
